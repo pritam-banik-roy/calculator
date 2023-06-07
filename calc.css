@@ -1,0 +1,159 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline:0;
+  transition: all 0.5s ease;
+}
+
+
+body{
+  font-family: sans-serif;
+}
+
+
+.container{
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  background-color:#fbfbfb;
+  place-items: center;
+}
+
+.calc{
+  border-radius: 20px;
+  height: auto;
+  width: auto;
+  padding:25px;
+  box-shadow: 1px 2px 30px rgba(0,0,0,0.3);
+}
+
+.calc-heading{
+  color:#534f4f;
+  letter-spacing: 1.5px;
+  line-height: 2;
+  position: relative;
+  margin-bottom:10px;
+  text-align: center;
+}
+
+
+.calc-theme{
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+}
+
+
+
+.calc-toggle-theme.active {
+  color: #333;
+}
+
+.calc-toggle-theme::before{
+  content: '\1F319';
+  font-size: 15px;
+  height:30px;
+  width:30px;
+  position: absolute;
+ top:50%;
+ transform: translateY(-50%);
+  border-radius: 50%;
+  right:0;
+  background-color: #7a7474;
+  z-index: 1;
+}
+
+.display{
+  margin:0 10px;
+  height:150px;
+  max-width: 260px;
+  display:flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  font-size: 30px;
+  padding:10px;
+  margin-bottom:20px;
+  color:#333;
+  overflow-x: scroll;
+}
+#display::-webkit-scrollbar{
+  display: block;
+  height:3px;
+}
+
+
+button{
+  height: 60px;
+  width: 60px;
+  border:0;
+  border-radius: 30px;
+  cursor:pointer;
+  margin:5px;
+  font-size: 20px;
+  transition: all 200ms ease;
+}
+
+button:hover{
+  transform: scale(1.15);
+}
+
+.calc-equal{
+  height: 130px;
+  background-color: #54B4D3;
+}
+
+.calc-operator{
+  background:#dcb057;
+  color:#fbfbfb
+}
+
+
+.clear{
+  background-color: #e75c73d3;
+  color:#fbfbfb;
+}
+
+
+
+.container-dark{background:#0a1e23}
+
+.calc-heading-dark{
+  color:#fff;
+}
+
+.calc-theme-dark{
+  background-color: #323637;
+}
+
+.calc-toggle-theme-dark::before{
+  background-color: #d6d0d0;
+  content:'	\263C';
+  color:yellow;
+}
+
+.display-dark{
+  color:#ccaf75;
+}
+
+.button-dark{
+  color:#fff;
+  background-color: #323637;
+}
+
+.calc-operator-dark{
+  background:#685226;
+  color:#fbfbfb
+}
+.calc-equal-dark{
+  background:#2d5f6f;
+  color:#fbfbfb;
+}
+
+.clear-dark{
+  background-color: #7d2d3ad3;
+  color:#fbfbfb;
+}
+
+
+
+
